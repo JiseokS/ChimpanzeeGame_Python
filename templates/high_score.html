@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+</head>
+<body>
+    <h1>High Scores</h1>
+    {% if player_name %}
+    <p>The highest score achieved so far is: {{ high_score }} by {{ player_name }}</p>
+    {% else %}
+    <p>No scores recorded yet.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
